@@ -1,4 +1,13 @@
-const reverseString = function() {
+const reverseString = function(string) {
+
+    let length = string.length;
+    let answer = "";
+
+    for (i = length-1; i = 0; i--){
+        answer = answer + string.charAt(i);
+    }
+
+    return answer;
 
 };
 
