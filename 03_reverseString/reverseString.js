@@ -1,10 +1,10 @@
-const reverseString = function(string) {
+const reverseString = function(text) {
 
-    let length = string.length;
+    let length = text.length;
     let answer = "";
 
-    for (i = length-1; i = 0; i--){
-        answer = answer + string.charAt(i);
+    for (i = length-1; i >= 0; i--){
+        answer = answer + text.charAt(i);
     }
 
     return answer;
