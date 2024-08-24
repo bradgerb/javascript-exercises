@@ -4,11 +4,10 @@ const sumAll = function(start, end) {
     let store = 0;
 
     for (i = 0; i < 1; i++){
-        if (arguments[i] < 0 || Number.isInteger(arguments[i]) === false){
+        if (arguments[i] < 0 || Number.isInteger(arguments[i]) === false || typeof start != "number" || typeof end != "number"){
             return "ERROR"
         }
     }
-
 
     if (start > end){
         store = start;
