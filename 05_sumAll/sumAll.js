@@ -1,6 +1,13 @@
 const sumAll = function(start, end) {
 
     let answer = 0;
+    let store = 0;
+
+    if (start > end){
+        store = start;
+        start = end;
+        end = store;
+    }
 
     for (i = start; i <= end; i++){
         answer = answer + i;
