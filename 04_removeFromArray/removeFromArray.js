@@ -6,7 +6,7 @@ const removeFromArray = function(arrayIn) {
     for (i = 0; i < arrayLength; i++){
         for (n = 1; n < argumentLength; n++){
             if (arrayIn[i] === arguments[n]){
-                deletedValue = arrayIn.splice(i, 1);
+                arrayIn.splice(i, 1);
                 i--;
             }
         }
