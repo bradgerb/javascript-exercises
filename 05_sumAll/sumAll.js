@@ -3,6 +3,10 @@ const sumAll = function(start, end) {
     let answer = 0;
     let store = 0;
 
+    if (start < 0 || end < 0){
+        return "ERROR"
+    }
+
     if (start > end){
         store = start;
         start = end;
