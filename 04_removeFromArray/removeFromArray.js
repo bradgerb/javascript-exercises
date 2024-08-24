@@ -1,11 +1,14 @@
-const removeFromArray = function(arrayIn, remove) {
+const removeFromArray = function(arrayIn) {
 
-    let length = arrayIn.length;
-    let answer = [];
+    let arrayLength = arrayIn.length;
+    let argumentLength = arguments.length;
 
-    for (i = 0; i < length; i++){
-        if (arrayIn.at(i) === remove){
-            deletedValue = arrayIn.splice(i, 1);
+    for (i = 0; i < arrayLength; i++){
+        for (n = 1; n < argumentLength; n++){
+            if (arrayIn[i] === arguments[n]){
+                deletedValue = arrayIn.splice(i, 1);
+                i--;
+            }
         }
     }
 
